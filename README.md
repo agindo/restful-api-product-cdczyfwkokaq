@@ -17,3 +17,12 @@ http://localhost:3000/create
 http://localhost:3000/update
 http://localhost:3000/delete/:id
 ```
+## JSON
+```
+{
+    "id": 1,
+    "name": "name",
+    "quantity": 0,
+    "price": 
+}
+```
