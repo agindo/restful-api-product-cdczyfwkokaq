@@ -59,7 +59,7 @@ router.post('/create', function(req, res, next) {
 
 router.post('/update', function(req, res, next) {
   try {
-    var sql = 'update product set name=?,quantity=?,price=? where idproduct=?'
+    var sql = 'update product set name=?,quantity=?,price=? where id=?'
     var values = [
         req.body.hasOwnProperty('name') ? req.body.name : '',
         req.body.hasOwnProperty('quantity') ? req.body.quantity : 0,
@@ -84,7 +84,7 @@ router.post('/update', function(req, res, next) {
 
 router.get('/delete/:id', function(req, res, next) {
   try {
-    var sql = 'delete from product where idproduct=?'
+    var sql = 'delete from product where id=?'
     var values = [              
       req.params.id
     ]
@@ -105,7 +105,7 @@ router.get('/delete/:id', function(req, res, next) {
 
 router.get('/:id', function(req, res, next) {
   try {
-    var sql = 'select * from product where idproduct=?'
+    var sql = 'select * from product where id=?'
 
     var values = [              
       req.params.id
