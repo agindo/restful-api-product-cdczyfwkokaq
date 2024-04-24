@@ -1,4 +1,4 @@
-# Restfull API Product with NodeJS ExpressJs Generator (--no-view) MySQL
+# Restful API Product with NodeJS ExpressJs Generator (--no-view) MySQL
 
 install dependencies:
 ```
