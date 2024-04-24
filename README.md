@@ -23,6 +23,11 @@ http://localhost:3000/delete/:id
     "id": 1,
     "name": "name",
     "quantity": 0,
-    "price": 
+    "price": 0
 }
+```
+
+## Dependencies
+```
+npm install mysql2
 ```
